@@ -3,7 +3,7 @@ using CakePlease.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CakePleaseWeb.Controllers
+namespace CakePleaseWeb.Areas.Customer.Controllers
 {
     public class HomeController : Controller
     {
