@@ -1,0 +1,12 @@
+D:\projects\Coursework\CakePlease\CakePlease.Utility\bin\Debug\net6.0\CakePlease.Utility.deps.json
+D:\projects\Coursework\CakePlease\CakePlease.Utility\bin\Debug\net6.0\CakePlease.Utility.dll
+D:\projects\Coursework\CakePlease\CakePlease.Utility\bin\Debug\net6.0\CakePlease.Utility.pdb
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.csproj.AssemblyReference.cache
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.AssemblyInfoInputs.cache
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.AssemblyInfo.cs
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.csproj.CoreCompileInputs.cache
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.dll
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\refint\CakePlease.Utility.dll
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\CakePlease.Utility.pdb
+D:\projects\Coursework\CakePlease\CakePlease.Utility\obj\Debug\net6.0\ref\CakePlease.Utility.dll
