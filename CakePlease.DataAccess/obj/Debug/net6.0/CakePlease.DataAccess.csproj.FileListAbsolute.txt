@@ -1,0 +1,17 @@
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.csproj.AssemblyReference.cache
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.AssemblyInfoInputs.cache
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.AssemblyInfo.cs
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.csproj.CoreCompileInputs.cache
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.DataAccess.deps.json
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.DataAccess.runtimeconfig.json
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.DataAccess.dll
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.DataAccess.pdb
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.Models.dll
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\bin\Debug\net6.0\CakePlease.Models.pdb
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.csproj.CopyComplete
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.dll
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\refint\CakePlease.DataAccess.dll
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.pdb
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\CakePlease.DataAccess.genruntimeconfig.cache
+D:\projects\Coursework\CakePlease\CakePlease.DataAccess\obj\Debug\net6.0\ref\CakePlease.DataAccess.dll
