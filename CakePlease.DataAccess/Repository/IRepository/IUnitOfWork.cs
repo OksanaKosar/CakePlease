@@ -9,7 +9,8 @@ namespace CakePlease.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         ICategoryRepository Category { get; }
-        public ICoverTypeRepository CoverType { get;}
+        ICoverTypeRepository CoverType { get;}
+        IProductRepository Product { get; }
 
         void Save();
     }
