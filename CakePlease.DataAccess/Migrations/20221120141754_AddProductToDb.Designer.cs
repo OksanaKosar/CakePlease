@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CakePleaseWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221119163651_AddCoverTypeToDb")]
-    partial class AddCoverTypeToDb
+    [Migration("20221120141754_AddProductToDb")]
+    partial class AddProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
