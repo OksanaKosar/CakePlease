@@ -3,7 +3,7 @@ using CakePlease.DateAccess;
 using CakePlease.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CakePleaseWeb.Areas.Admin.Controllers
+namespace CakePleaseWeb.Controllers
 {
     public class CategoryController : Controller
     {
@@ -22,7 +22,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         //get
         public IActionResult Create()
         {
-
+            
             return View();
         }
 
@@ -31,7 +31,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
+            if(obj.Name == obj.DisplayOrder.ToString())
             {
                 //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
                 ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
@@ -44,12 +44,12 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
-
+            
         }
         //get
         public IActionResult Edit(int? id)
         {
-            if (id == null || id == 0)
+            if(id==null || id==0)
             {
                 return NotFound();
             }
@@ -86,7 +86,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         //get
         public IActionResult Delete(int? id)
         {
-            if (id == null || id == 0)
+            if (id==null || id==0)
             {
                 return NotFound();
             }
@@ -116,7 +116,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
-
+            
         }
     }
 }

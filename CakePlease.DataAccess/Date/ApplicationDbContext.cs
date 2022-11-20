@@ -14,6 +14,7 @@ namespace CakePlease.DateAccess
         public DbSet<Product> Products { get; set; }
 
 
+
     }
 
 }

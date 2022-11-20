@@ -555,4 +555,3 @@ D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.Data
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.Models.dll
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.DataAccess.pdb
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.Models.pdb
-D:\projects\Coursework\CakePlease\CakePleaseWeb\obj\Debug\net6.0\CakePleaseWeb.MvcApplicationPartsAssemblyInfo.cs
