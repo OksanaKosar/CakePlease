@@ -25,4 +25,8 @@
     <ProjectReference Include="..\CakePlease.DataAccess\CakePlease.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
+  </ItemGroup>
+
 </Project>
