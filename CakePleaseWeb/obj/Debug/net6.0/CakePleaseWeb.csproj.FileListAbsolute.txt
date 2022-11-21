@@ -556,3 +556,5 @@ D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.Mode
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.DataAccess.pdb
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\CakePlease.Models.pdb
 D:\projects\Coursework\CakePlease\CakePleaseWeb\obj\Debug\net6.0\CakePleaseWeb.MvcApplicationPartsAssemblyInfo.cs
+D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
