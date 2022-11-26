@@ -1,5 +1,7 @@
 ﻿
+using CakePlease.DataAccess.Repository.IRepository;
 using CakePlease.Models;
+using CakePlease.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,15 +10,29 @@ namespace CakePleaseWeb.Areas.Customer.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork unitOfWork)
         {
             _logger = logger;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Product> products = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
+            return View(products);
+        }
+
+        public IActionResult Details(int id)
+        {
+            ShoppingCart shoppingCart = new ShoppingCart
+            {
+                Count = 1,
+                Product = _unitOfWork.Product.GetFirstOrDefault(c => c.Id==id, includeProperties: "Category,CoverType"),
+            };
+            
+            return View(shoppingCart);
         }
 
         public IActionResult Privacy()

@@ -119,7 +119,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
 
         //post
         [HttpDelete]
-        public IActionResult DeletePOST(int? id)
+        public IActionResult Delete(int? id)
         {
             var obj = _unitOfWork.Product.GetFirstOrDefault(c => c.Id == id);
             if (obj == null)
