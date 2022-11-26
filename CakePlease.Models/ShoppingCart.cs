@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CakePlease.Models.ViewModels
+namespace CakePlease.Models
 {
     public class ShoppingCart
     {
         public Product Product { get; set; }
-        [Range(1,100,ErrorMessage ="Виберіть значення між 1 та 100")]
+        [Range(1, 100, ErrorMessage = "Виберіть значення між 1 та 100")]
         public int Count { get; set; }
     }
 }

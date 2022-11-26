@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lDyEuMlEA8kQclQ8O1j0xw+VENeAbYHPaWbtg0+fvvU=",
+  "Hash": "vKjIj+Ese3VoanD0e6bCSzM6guYiC/ogRWQb07tfd8E=",
   "Source": "CakePleaseWeb",
   "BasePath": "_content/CakePleaseWeb",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\00c06fdf-3587-4528-8f41-d64541e1d406.png"
+    },
+    {
+      "Identity": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png",
+      "SourceId": "CakePleaseWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\",
+      "BasePath": "_content/CakePleaseWeb",
+      "RelativePath": "images/products/09a928b8-3511-4767-8d24-a6d5f271207d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png"
     },
     {
       "Identity": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\js\\product.js",
