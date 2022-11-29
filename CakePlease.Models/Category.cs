@@ -9,10 +9,12 @@ namespace CakePlease.Models
         public int Id { get; set; }
 
         [Required]
+        [Display(Name = "Назва")]
         public string Name { get; set; }
 
-        [DisplayName("Display Order")]
-        [Range(1, 100, ErrorMessage = "Display Order must be between 1 and 100 only!!")]
+        [Display(Name = "Замовлення")]
+        
+        [Range(1, 100, ErrorMessage = "Замовлення не може перевищувати 100 і містити від'ємні значення!!")]
         public int DisplayOrder { get; set; }
         public DateTime Created_data_time { get; set; } = DateTime.Now;
     }

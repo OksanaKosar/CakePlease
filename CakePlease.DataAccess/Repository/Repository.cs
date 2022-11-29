@@ -31,7 +31,7 @@ namespace CakePlease.DataAccess.Repository
             IQueryable<T> quary = dbSet;
             if(includeProperties != null)
             {
-                foreach(var includeProp in includeProperties.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach(var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     quary = quary.Include(includeProp);
                 }
@@ -45,7 +45,7 @@ namespace CakePlease.DataAccess.Repository
             quary = quary.Where(filter);
             if (includeProperties != null)
             {
-                foreach (var includeProp in includeProperties.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     quary = quary.Include(includeProp);
                 }

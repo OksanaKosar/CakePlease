@@ -34,13 +34,13 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             if (obj.Name == obj.DisplayOrder.ToString())
             {
                 //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
-                ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
+                ModelState.TryAddModelError("name", "Замовлення не може містити теж, що і назва.");
             }
             if (ModelState.IsValid)
             {
                 _unitOfWork.Category.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category created successfully";
+                TempData["success"] = "Категорія створена успішно";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -71,13 +71,13 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             if (obj.Name == obj.DisplayOrder.ToString())
             {
                 //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
-                ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
+                ModelState.TryAddModelError("name", "Замовлення не може містити теж, що і назва.");
             }
             if (ModelState.IsValid)
             {
                 _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category updated successfully";
+                TempData["success"] = "Категорія обновлена успішно";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -114,7 +114,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
 
             _unitOfWork.Category.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Category deleted successfully";
+            TempData["success"] = "Категорія видалена успішно";
             return RedirectToAction("Index");
 
         }

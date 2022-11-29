@@ -35,7 +35,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.CoverType.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "CoverType created successfully";
+                TempData["success"] = "Нова упаковка додана";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -65,7 +65,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.CoverType.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "CoverType updated successfully";
+                TempData["success"] = "Упаковка відредагована";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -98,7 +98,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             }
             _unitOfWork.CoverType.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "CoverType deleted successfully";
+            TempData["success"] = "Упаковка видалена";
             return RedirectToAction("Index");
 
         }

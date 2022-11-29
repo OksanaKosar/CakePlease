@@ -8,11 +8,11 @@
 <div class = "container p-3">
     <div class = "row pt-4">
         <div class = "col-6">
-            <h2 class="text-primary">Category List</h2>
+            <h2 class="text-primary">Категорії</h2>
         </div>
         <div class = "col-6 text-end">
             <a asp-controller = "Category" asp-action="Create" class="btn btn-primary">
-               <i class="bi bi-plus-circle-fill"></i> &nbsp; Create new category
+               <i class="bi bi-plus-circle-fill"></i> &nbsp; Створити нову категорію
             </a>
         </div>
     </div>
@@ -22,8 +22,8 @@
 <table class = " table table-border table-striped" style = "widht = 100%">
     <thead>
         <tr>
-            <th>Category Name</th>
-            <th>Display order</th>
+            <th>Назва</th>
+            <th>Замовлення</th>
             <th></th>
         </tr>
     </thead>
@@ -39,9 +39,9 @@
                 <td>
                     <div class = "w-75 btn-group" role = "group">
                         <a asp-controller="Category" asp-action="Edit" asp-route-id = "@obj.Id" class = "btn btn-primary mx-2"> 
-                            <i class="bi bi-pencil-square"></i> &nbsp; Edit </a>
+                            <i class="bi bi-pencil-square"></i> &nbsp; Змінити </a>
                         <a asp-controller="Category" asp-action="Delete" asp-route-id = "@obj.Id" class = "btn btn-danger mx-2"> 
-                                <i class="bi bi-trash3"></i> &nbsp; Delete </a>
+                                <i class="bi bi-trash3"></i> &nbsp; Видалити </a>
                     </div>
                 </td>
             </tr>
