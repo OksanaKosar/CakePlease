@@ -14,22 +14,20 @@ namespace CakePlease.Models
         public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Назва")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
 
-        [Display(Name = "Опис")]
         public string Description { get; set; }
 
         [Required]
         [Range(1,2000)]
-        [Display(Name = "Ціна")]
         public double Price { get; set; }
         [ValidateNever]
-        [Display(Name = "Зображення")]
+        [Display(Name = "Image")]
         public string ImageUrl { get; set; }
 
         [Required]
-        [Display(Name = "Категорія")]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
@@ -37,7 +35,7 @@ namespace CakePlease.Models
         public Category Category { get; set; }
 
         [Required]
-        [Display(Name = "Упаковка")]
+        [Display(Name = "Packaging")]
         public int CoverTypeId { get; set; }
         [ValidateNever]
 

@@ -8,7 +8,7 @@
 		<div class="col-10">
 			<div class="border p-3 mt-4">
 		<div class="col-12 pb-2">
-			<h2 class="text-primary"> @(Model.Product.Id!=0 ? "Змінити" : "Додати")  десерт</h2>
+			<h2 class="text-primary"> @(Model.Product.Id!=0 ? "Update" : "Add")  desert</h2>
 			<hr/>
 		</div>
 				@*		<div asp-validation-summary="All"></div>*@
@@ -34,26 +34,26 @@
 		<div class="mb-3">
 			<label asp-for="Product.CategoryId"></label>
 			<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select" >
-			<option disabled selected>--Виберіть категорію--</option>
+			<option disabled selected>--Select category--</option>
 			</select>
 			<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
 		</div>
 		<div class="mb-3">
 			<label asp-for="Product.CoverTypeId"></label>
 			<select asp-for="Product.CoverTypeId" asp-items="@Model.CoverTypeList" class="form-select" >
-			<option disabled selected>--Виберіть упаковку--</option>
+			<option disabled selected>--Select packaging--</option>
 			</select>
 			<span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
 		</div>
 				@if (Model.Product.Id!=0)
 				{
-					<button type="submit" class="btn btn-primary" style="width:150px">Змінити</button>
+					<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
 				}
 				else
 				{
-					<button type="submit" onclick = "return ValidateInput()" class="btn btn-primary" style="width:150px">Додати</button>
+					<button type="submit" onclick = "return ValidateInput()" class="btn btn-primary" style="width:150px">Add</button>
 				}
-		<a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:250px">Повернутися назад</a>
+		<a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to list</a>
 	</div>
 		</div>
 		<div class="col-2 pt-4">
@@ -76,8 +76,8 @@
 			if(document.getElementById("uploadBox").value==""){
 				Swal.fire({
 				  icon: 'error',
-				  title: 'От, лишенько...',
-				  text: 'Завантажте будь ласка фото!',
+				  title: 'Oops...',
+				  text: 'Please upload an Image!',
 				})
 				return false;
 			}

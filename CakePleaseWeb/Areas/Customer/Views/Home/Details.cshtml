@@ -19,7 +19,7 @@
                             
                             <div class="row pl-2">
                                 <div class="card text-white bg-secondary mb-3" style="max-width: 50rem;">
-                                    <div class="card-header">Опис</div>
+                                <div class="card-header">Description</div>
                                     <div class="card-body">
                                     <p class="card-text">@Model.Product.Description</p>
                                     </div>
@@ -27,11 +27,11 @@
                                 @*<p class="text-secondary">@Model.Product.Description</p>*@
                             </div>
                             <div class="row pl-2">
-                                <div class="col-3 text-primary"><h4>Кількість</h4></div>
+                                <div class="col-3 text-primary"><h4>Count</h4></div>
                                 <div class="col-9"><input asp-for="Count" class="form-control"  /></div>
                             </div>
                             <div class="row pl-2">
-                                <h5 class="text-primary pb-2">Ціна : @Model.Product.Price грн </h5>
+                                <h5 class="text-primary pb-2">Price : @Model.Product.Price uan </h5>
                             </div>
                         </div>
                         @*<div class="col-12 col-lg-3 offset-lg-1 text-center">
@@ -43,10 +43,10 @@
             <div class="card-footer">
                 <div class="row">
                     <div class="col-12 col-md-6 pb-1">
-                        <a class="btn btn-success form-control " style="height:50px;" asp-action="Index">На головну</a>
+                        <a class="btn btn-success form-control " style="height:50px;" asp-action="Index">Back to home</a>
                     </div>
                     <div class="col-12 col-md-6 pb-1">
-                        <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height:50px;">Додати в кошик</button>
+                        <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height:50px;">Add to cart</button>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ namespace CakePlease.Models
     public class ShoppingCart
     {
         public Product Product { get; set; }
-        [Range(1, 100, ErrorMessage = "Виберіть значення між 1 та 100")]
+        [Range(1, 100, ErrorMessage = "Please enter a value between 1 and 1000")]
         public int Count { get; set; }
     }
 }

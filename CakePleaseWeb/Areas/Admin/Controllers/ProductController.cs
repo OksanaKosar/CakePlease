@@ -10,6 +10,7 @@ using System.Net.Http.Headers;
 
 namespace CakePleaseWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -100,7 +101,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
                     _unitOfWork.Product.Update(obj.Product);
                 }
                 _unitOfWork.Save();
-                TempData["success"] = "Продукт додано";
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -124,7 +125,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             var obj = _unitOfWork.Product.GetFirstOrDefault(c => c.Id == id);
             if (obj == null)
             {
-                Json(new { success = false, message = "Помилка видалення" });
+                Json(new { success = false, message = "Error while deleting" });
             }
 
             var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
@@ -134,7 +135,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             }
             _unitOfWork.Product.Remove(obj);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Продукт видалено" });
+            return Json(new { success = true, message = "Delete Successful" });
            
 
         }

@@ -36,6 +36,7 @@
       "CakePleaseWeb/1.0.0": {
         "dependencies": {
           "CakePlease.DataAccess": "1.0.0",
+          "CakePlease.Utility": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
           "Microsoft.AspNetCore.Identity.UI": "7.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "7.0.0",
@@ -3236,6 +3237,18 @@
         },
         "compile": {
           "CakePlease.Models.dll": {}
+        }
+      },
+      "CakePlease.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
+          "Microsoft.AspNetCore.Identity.UI": "7.0.0"
+        },
+        "runtime": {
+          "CakePlease.Utility.dll": {}
+        },
+        "compile": {
+          "CakePlease.Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery.Reference/7.0.0.0": {
@@ -6610,6 +6623,11 @@
       "sha512": ""
     },
     "CakePlease.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CakePlease.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

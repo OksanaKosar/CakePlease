@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CakePlease.DataAccess\CakePlease.DataAccess.csproj" />
+    <ProjectReference Include="..\CakePlease.Utility\CakePlease.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

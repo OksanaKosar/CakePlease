@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CakePleaseWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -35,7 +36,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.CoverType.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Нова упаковка додана";
+                TempData["success"] = "Packaging added successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -65,7 +66,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.CoverType.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Упаковка відредагована";
+                TempData["success"] = "Packaging updated successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -98,7 +99,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             }
             _unitOfWork.CoverType.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Упаковка видалена";
+            TempData["success"] = "Packaging deleted successfully";
             return RedirectToAction("Index");
 
         }

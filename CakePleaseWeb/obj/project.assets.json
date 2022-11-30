@@ -4497,6 +4497,20 @@
         "runtime": {
           "bin/placeholder/CakePlease.Models.dll": {}
         }
+      },
+      "CakePlease.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
+          "Microsoft.AspNetCore.Identity.UI": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CakePlease.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CakePlease.Utility.dll": {}
+        }
       }
     }
   },
@@ -12132,11 +12146,17 @@
       "type": "project",
       "path": "../CakePlease.Models/CakePlease.Models.csproj",
       "msbuildProject": "../CakePlease.Models/CakePlease.Models.csproj"
+    },
+    "CakePlease.Utility/1.0.0": {
+      "type": "project",
+      "path": "../CakePlease.Utility/CakePlease.Utility.csproj",
+      "msbuildProject": "../CakePlease.Utility/CakePlease.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "CakePlease.DataAccess >= 1.0.0",
+      "CakePlease.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 7.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 7.0.0",
@@ -12175,6 +12195,9 @@
           "projectReferences": {
             "D:\\projects\\Coursework\\CakePlease\\CakePlease.DataAccess\\CakePlease.DataAccess.csproj": {
               "projectPath": "D:\\projects\\Coursework\\CakePlease\\CakePlease.DataAccess\\CakePlease.DataAccess.csproj"
+            },
+            "D:\\projects\\Coursework\\CakePlease\\CakePlease.Utility\\CakePlease.Utility.csproj": {
+              "projectPath": "D:\\projects\\Coursework\\CakePlease\\CakePlease.Utility\\CakePlease.Utility.csproj"
             }
           }
         }

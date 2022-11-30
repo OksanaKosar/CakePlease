@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CakePleaseWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -34,13 +35,13 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             if (obj.Name == obj.DisplayOrder.ToString())
             {
                 //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
-                ModelState.TryAddModelError("name", "Замовлення не може містити теж, що і назва.");
+                ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
             }
             if (ModelState.IsValid)
             {
                 _unitOfWork.Category.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Категорія створена успішно";
+                TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -77,7 +78,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Категорія обновлена успішно";
+                TempData["success"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -114,7 +115,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
 
             _unitOfWork.Category.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Категорія видалена успішно";
+            TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
 
         }

@@ -11,7 +11,7 @@ namespace CakePlease.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name="Упаковка")]
+        [Display(Name="Packaging")]
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
