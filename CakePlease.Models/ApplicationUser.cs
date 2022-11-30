@@ -20,6 +20,7 @@ namespace CakePlease.Models
 
 		public string? PostalCode { get; set; }
 
+        public string? EmploymentBookNum { get; set; }
 
-	}
+    }
 }
