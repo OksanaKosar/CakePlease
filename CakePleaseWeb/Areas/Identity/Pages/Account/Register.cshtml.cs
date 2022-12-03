@@ -164,7 +164,12 @@ namespace CakePleaseWeb.Areas.Identity.Pages.Account
                 user.PostalCode = Input.PostalCode;
                 user.PhoneNumber = Input.PhoneNumber;
                 user.Region = Input.Region;
-                user.EmploymentBookNum= Input.EmploymentBookNum;
+                if(Input.Role == SD.User_courier)
+                {
+                    user.EmploymentBookNum= Input.EmploymentBookNum;
+
+                }
+                
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
