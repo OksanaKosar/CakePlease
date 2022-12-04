@@ -18,7 +18,7 @@ namespace CakePlease.DataAccess.Repository
         public Repository(ApplicationDbContext db)
         {
             _db = db;
-            //_db.Products.Include(c => c.Category).Include(c => c.CoverType);
+            //_db.ShoppingCart.Include(c => c.Product).Include(c => c.CoverType);
             this.dbSet = _db.Set<T>();
         }
         public void Add(T entity)
@@ -26,10 +26,15 @@ namespace CakePlease.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
             IQueryable<T> quary = dbSet;
-            if(includeProperties != null)
+            if(filter != null)
+            {
+                quary = quary.Where(filter);
+            }
+            
+            if (includeProperties != null)
             {
                 foreach(var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
