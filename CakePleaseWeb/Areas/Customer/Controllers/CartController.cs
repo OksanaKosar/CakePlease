@@ -36,7 +36,26 @@ namespace CakePleaseWeb.Areas.Customer.Controllers
             return View(ShoppingCartVM);
         }
 
-        public IActionResult Plus(int cartId)
+		public IActionResult Summary()
+		{
+
+			//var claimsIdentity = (ClaimsIdentity)User.Identity;
+			//var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+			//ShoppingCartVM = new ShoppingCartVM()
+			//{
+			//	ListshoppingCart = _unitOfWork.ShoppingCart.GetAll(c => c.ApplicationUserId == claim.Value,
+			//	includeProperties: "Product")
+			//};
+			//foreach (var cart in ShoppingCartVM.ListshoppingCart)
+			//{
+			//	ShoppingCartVM.CartPrice += (cart.Product.Price * cart.Count);
+
+			//}
+			//return View(ShoppingCartVM);
+			return View();
+		}
+
+		public IActionResult Plus(int cartId)
         {
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(c=>c.Id== cartId);
             _unitOfWork.ShoppingCart.IncrementCount(cart, 1);
