@@ -584,3 +584,4 @@ D:\projects\Coursework\CakePlease\CakePleaseWeb\obj\Debug\net7.0\CakePleaseWeb.g
 D:\projects\Coursework\CakePlease\CakePleaseWeb\obj\Debug\net7.0\ref\CakePleaseWeb.dll
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net7.0\CakePlease.Utility.dll
 D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net7.0\CakePlease.Utility.pdb
+D:\projects\Coursework\CakePlease\CakePleaseWeb\bin\Debug\net7.0\Stripe.net.dll

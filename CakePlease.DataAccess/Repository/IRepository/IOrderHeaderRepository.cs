@@ -12,6 +12,8 @@ namespace CakePlease.DataAccess.Repository.IRepository
         void Update(OrderHeader obj);
 
         void UpdateStatus(int id, string OrderStatus, string? PaymentStatus = null);
+        void UpdateStripePaymentID(int id, string sessionId, string paymentItentId);
 
-    }
+
+	}
 }
