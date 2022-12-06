@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vyGIEKhgTrou01JJ4m7otddkj7b6M/2a80PUSlj9HVY=",
+  "Hash": "fWyQkGX7iz5gcgkx+VCpmpS/nyCthEE4a67AdDJhYRg=",
   "Source": "CakePleaseWeb",
   "BasePath": "_content/CakePleaseWeb",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\NicePhoto.png",
+      "SourceId": "CakePleaseWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\",
+      "BasePath": "_content/CakePleaseWeb",
+      "RelativePath": "images/NicePhoto.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\NicePhoto.png"
     },
     {
       "Identity": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png",

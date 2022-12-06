@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\NicePhoto.png",
+      "PackagePath": "staticwebassets\\images\\NicePhoto.png"
+    },
+    {
       "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png",
       "PackagePath": "staticwebassets\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png"
     },
