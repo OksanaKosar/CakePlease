@@ -4,6 +4,7 @@ using CakePlease.DateAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CakePlease.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221205211001_AddOrderToDb")]
+    partial class AddOrderToDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,20 +124,11 @@ namespace CakePlease.DataAccess.Migrations
                     b.Property<string>("OrderStatus")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("OrderTotal")
-                        .HasColumnType("float");
-
                     b.Property<DateTime>("PaymentData")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("PaymentDueData")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("PaymentIntentId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PaymentStatus")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -146,9 +140,6 @@ namespace CakePlease.DataAccess.Migrations
 
                     b.Property<string>("Region")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SessionId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ShippingDate")

@@ -10,6 +10,6 @@ namespace CakePlease.Models.ViewModels
     {
         public IEnumerable<ShoppingCart> ListshoppingCart { get; set; }
 
-        public double CartPrice { get; set; }
+        public OrderHeader OrderHeader { get; set; }
     }
 }
