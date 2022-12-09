@@ -25,16 +25,72 @@
       "PackagePath": "staticwebassets\\images\\products\\09a928b8-3511-4767-8d24-a6d5f271207d.png"
     },
     {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\1ba5f697-2d19-4a8f-80d8-b8a7adf3494d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1ba5f697-2d19-4a8f-80d8-b8a7adf3494d.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\2fa25347-965d-47e1-9c79-a6d6be93085d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2fa25347-965d-47e1-9c79-a6d6be93085d.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\35c9829f-b8b8-4bb9-935a-456f56219f28.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\35c9829f-b8b8-4bb9-935a-456f56219f28.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\4f3988eb-4eb8-4bd0-9637-9f69cccb1223.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4f3988eb-4eb8-4bd0-9637-9f69cccb1223.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\50f8989d-99a3-40f5-8b11-d8972ffc6c93.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\50f8989d-99a3-40f5-8b11-d8972ffc6c93.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\689126f0-a673-4766-87a1-9b11f46db385.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\689126f0-a673-4766-87a1-9b11f46db385.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\75e38fca-4242-4aa5-9e2e-9689f3ca1c2d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\75e38fca-4242-4aa5-9e2e-9689f3ca1c2d.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\881f3a44-790c-4888-825d-7953b6950ae7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\881f3a44-790c-4888-825d-7953b6950ae7.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\8f52fe1c-1661-43bc-90ac-18001ace021e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8f52fe1c-1661-43bc-90ac-18001ace021e.jpg"
+    },
+    {
       "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\95a965c0-88c2-4565-a2ef-7ab23bbfbce3.png",
       "PackagePath": "staticwebassets\\images\\products\\95a965c0-88c2-4565-a2ef-7ab23bbfbce3.png"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\a3f9b57f-7019-48ad-8c41-c108f690d4ca.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a3f9b57f-7019-48ad-8c41-c108f690d4ca.jpg"
     },
     {
       "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\a4d1ada9-052a-46cb-8e54-37793d54a9db.png",
       "PackagePath": "staticwebassets\\images\\products\\a4d1ada9-052a-46cb-8e54-37793d54a9db.png"
     },
     {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\a524077b-a541-43e0-a745-3338a17b4181.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a524077b-a541-43e0-a745-3338a17b4181.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\b0efba13-1585-46c3-9b63-4bf1feabb5fc.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b0efba13-1585-46c3-9b63-4bf1feabb5fc.jpg"
+    },
+    {
       "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\e1765043-0d3c-47a8-9dcb-7b98de43f7da.png",
       "PackagePath": "staticwebassets\\images\\products\\e1765043-0d3c-47a8-9dcb-7b98de43f7da.png"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\images\\products\\f8c4205c-0bd4-46ee-8fbb-8aeb2600d452.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f8c4205c-0bd4-46ee-8fbb-8aeb2600d452.jpg"
+    },
+    {
+      "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
     },
     {
       "Id": "D:\\projects\\Coursework\\CakePlease\\CakePleaseWeb\\wwwroot\\js\\product.js",
