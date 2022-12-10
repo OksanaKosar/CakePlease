@@ -10,16 +10,11 @@ $(document).ready(function () {
             loadDataTable("completed");
         }
         else {
-            if (url.includes("pending")) {
-                loadDataTable("pending");
+            if (url.includes("approved")) {
+                loadDataTable("approved");
             }
             else {
-                if (url.includes("approved")) {
-                    loadDataTable("approved");
-                }
-                else {
-                    loadDataTable("all");
-                }
+                loadDataTable("all");
             }
         }
     }

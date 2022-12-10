@@ -3,6 +3,8 @@ using CakePlease.DataAccess.Repository.IRepository;
 using CakePlease.DateAccess;
 using CakePlease.Models;
 using CakePlease.Models.ViewModels;
+using CakePlease.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -11,6 +13,7 @@ using System.Net.Http.Headers;
 namespace CakePleaseWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.User_admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

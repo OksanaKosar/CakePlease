@@ -1,11 +1,14 @@
 ﻿using CakePlease.DataAccess.Repository.IRepository;
 using CakePlease.DateAccess;
 using CakePlease.Models;
+using CakePlease.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CakePleaseWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.User_admin)]
     public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

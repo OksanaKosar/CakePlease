@@ -44,9 +44,18 @@ namespace CakePlease.DataAccess.Repository
             return quary.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = true)
         {
-            IQueryable<T> quary = dbSet;
+            IQueryable<T> quary;
+            if (tracked)
+            {
+				quary = dbSet;
+			}
+            else
+            {
+                quary = dbSet.AsNoTracking();
+
+			}
             quary = quary.Where(filter);
             if (includeProperties != null)
             {
