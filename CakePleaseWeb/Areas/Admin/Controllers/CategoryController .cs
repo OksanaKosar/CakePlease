@@ -37,7 +37,6 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
-                //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
                 ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
             }
             if (ModelState.IsValid)
@@ -57,9 +56,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            //var categoryFromDb = _db.Categories.Find(id);
             var categoryFromDbFirst = _unitOfWork.Category.GetFirstOrDefault(c => c.Id == id);
-            //var categoryFromDbSingle = _db.Categories.SingleOrDefault(c => c.Id == id);
             if (categoryFromDbFirst == null)
             {
                 return NotFound();
@@ -74,8 +71,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
-                //ModelState.TryAddModelError("CustomError", "The DisplayOrder cannot exactly math the Name.");
-                ModelState.TryAddModelError("name", "Замовлення не може містити теж, що і назва.");
+                ModelState.TryAddModelError("name", "The DisplayOrder cannot exactly math the Name.");
             }
             if (ModelState.IsValid)
             {
@@ -110,7 +106,7 @@ namespace CakePleaseWeb.Areas.Admin.Controllers
         public IActionResult DeletePOST(int? id)
         {
             var obj = _unitOfWork.Category.GetFirstOrDefault(c => c.Id == id);
-            //var obj = _db.Categories.Find(id);
+           
             if (obj == null)
             {
                 return NotFound();

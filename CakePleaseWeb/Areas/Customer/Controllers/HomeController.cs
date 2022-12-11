@@ -26,6 +26,11 @@ namespace CakePleaseWeb.Areas.Customer.Controllers
             return View(products);
         }
 
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
         public IActionResult Details(int productId)
         {
             ShoppingCart shoppingCart = new ShoppingCart

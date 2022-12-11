@@ -155,9 +155,6 @@ namespace CakePleaseWeb.Areas.Customer.Controllers
 
 
 
-			//_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListshoppingCart);
-			//_unitOfWork.Save();	
-			//return RedirectToAction("Index","Home");
 			
 		}
 
